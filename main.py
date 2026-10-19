@@ -13,6 +13,15 @@ def jogar():
             continue
         break
 
+    print("Lançando a moeda")
+    time.sleep(0.8)
+    print(".")
+    time.sleep(1)
+    print(".")
+    time.sleep(1)
+    print(".")
+    time.sleep(1)
+
     if escolha_jogador == "1":
         escolhajogador = "Cara"
     else:
@@ -26,15 +35,12 @@ def jogar():
         resultado = "Coroa"
 
     if escolha_computador == escolha_jogador:
-        time.sleep(2)
-        print(
-            f"Computador escolheu {resultado}, você escolheu {escolhajogador}, você ganhou!"
-        )
+        print(f"A moeda caiu em {resultado}, você escolheu {escolhajogador}, você ganhou!")
     else:
-        print(
-            f"Computador escolheu {resultado}, você escolheu {escolhajogador}, você perdeu."
-        )
+        print(f"A moeda caiu em {resultado}, você escolheu {escolhajogador}, você perdeu.")
+        
 
+    
 
 while True:
 
